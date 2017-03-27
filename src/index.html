@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en"
+      data-ng-app="MainApp">
+<head>
+    <title data-ng-controller="PageTitleController"
+           data-ng-bind-template="{{pageTitleModel.getTitle()}}">Home</title>
+
+    <!-- <%= config.timestamp %> -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        [data-ng-cloak] {
+            display: none;
+        }
+    </style>
+
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+</head>
+<body data-ng-cloak>
+
+<div class="main-container">
+
+    <pr-page-header></pr-page-header>
+
+    <section class="main-section">
+
+        <div data-ng-view
+             class="main-view"></div>
+
+    </section>
+
+    <pr-page-footer></pr-page-footer>
+
+</div>
+
+<script src="js/lib/angular<%= config.minSuffix %>.js<%= config.cacheBuster %>"></script>
+<script src="js/lib/angular-animate<%= config.minSuffix %>.js<%= config.cacheBuster %>"></script>
+<script src="js/lib/angular-resource<%= config.minSuffix %>.js<%= config.cacheBuster %>"></script>
+<script src="js/lib/angular-route<%= config.minSuffix %>.js<%= config.cacheBuster %>"></script>
+<script src="js/lib/angular-sanitize<%= config.minSuffix %>.js<%= config.cacheBuster %>"></script>
+<script src="js/lib/ui-bootstrap-tpls<%= config.minSuffix %>.js<%= config.cacheBuster %>"></script>
+<script src="js/lib/showdown.js<%= config.cacheBuster %>"></script>
+<script src="<%= config.mainjs %><%= config.cacheBuster %>"></script>
+
+</body>
+</html>

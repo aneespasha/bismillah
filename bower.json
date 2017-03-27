@@ -1,0 +1,28 @@
+{
+    "name": "angular-spa-demo",
+    "version": "0.1.0",
+    "homepage": "https://github.com/mcalthrop/angular-spa-demo",
+    "authors": [
+        "Matt Calthrop <mcalthrop@gmail.com>"
+    ],
+    "license": "MIT",
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ],
+    "devDependencies": {
+        "angular": "1.2.22",
+        "angular-animate": "1.2.22",
+        "angular-ui-bootstrap": "0.11.0",
+        "angular-markdown-directive": "0.3.0",
+        "angular-mocks": "1.2.22",
+        "angular-resource": "1.2.22",
+        "angular-route": "1.2.22",
+        "angular-sanitize": "1.2.22",
+        "bootstrap": "3.2.0",
+        "showdown": "0.3.1"
+    }
+}
